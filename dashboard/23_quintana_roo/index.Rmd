@@ -162,3 +162,49 @@ hotspots_map(cve_ent = "23",
 
 ```
 
+# **Hotspots del vector de Dengue**
+
+## Column {.tabset}
+
+### [**Cancun**]{style="color:#990000"}
+
+```{r vector_hotspots_cancun, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_23_quintana_roo,
+                                 locality = "Cancun",
+                                 cve_ent = "23",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**Chetumal**]{style="color:#990000"}
+
+```{r vector_hotspots_chetumal, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_23_quintana_roo,
+                                 locality = "Chetumal",
+                                 cve_ent = "23",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### [**Cozumel**]{style="color:#990000"}
+
+```{r vector_hotspots_cozumel, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_23_quintana_roo,
+                                 locality = "Cozumel",
+                                 cve_ent = "23",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**Playa del Carmen**]{style="color:#990000"}
+
+```{r vector_hotspots_playa_carmen, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_23_quintana_roo,
+                                 locality = "Playa del Carmen",
+                                 cve_ent = "23",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
