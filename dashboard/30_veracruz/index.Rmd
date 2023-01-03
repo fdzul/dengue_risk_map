@@ -97,8 +97,7 @@ if(as.vector(Sys.info()["sysname"]) == "Darwin"){
     
     
     # load the vector hotspots
-    load("D:/OneDrive/proyects/hotspots/8.RData/eggs_hotspots_historic/30_veracruz/result_veracruz_zinb1.RData")
-    
+    load("D:/OneDrive/proyects/hotspots/8.RData/eggs_hotspots_historic/betas_veracruz_zinb1.RData")
     
     
 } else if(as.vector(Sys.info()["sysname"]) == "Linux"){
@@ -242,3 +241,22 @@ hotspots_map(cve_ent = "30",
              static_map = FALSE)
 
 ```
+
+
+# **Hotspots del vector de Dengue**
+
+## Column {.tabset}
+
+### [**Pánuco**]{style="color:#990000"}
+
+```{r vector_hotspots_merida, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
+                                 locality = "Panuco",
+                                 cve_ent = "30",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+
+
