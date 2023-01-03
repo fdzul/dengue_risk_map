@@ -81,7 +81,7 @@ if(as.vector(Sys.info()["sysname"]) == "Darwin"){
     sf::st_make_valid()
     
     # load the vector hotspots
-    load("~/OneDrive/proyects/hotspots_eggs/8.RData/31_yucatan/betas/31_yucatan_zinb1_betas.RData")
+    load("~/OneDrive/proyects/hotspots_eggs/8.RData/04/betas/04_campeche_zinb1_betas.RData")
     
     
 } else if(as.vector(Sys.info()["sysname"]) == "Windows"){
@@ -95,7 +95,7 @@ if(as.vector(Sys.info()["sysname"]) == "Darwin"){
     
     
     # load the vector hotspots
-    load("D:/OneDrive/proyects/hotspots_eggs/8.RData/31_yucatan/betas/31_yucatan_zinb1_betas.RData")
+    load("D:/OneDrive/proyects/hotspots_eggs/8.RData/04_campeche/betas/04_campeche_zinb1_betas.RData")
     
 } else if(as.vector(Sys.info()["sysname"]) == "Linux"){
     
@@ -139,5 +139,54 @@ hotspots_map(cve_ent = "04",
 
 ```
 
+# **Hotspots del vector de Dengue**
+
+## Column {.tabset}
+
+### [**Campeche**]{style="color:#990000"}
+
+```{r vector_hotspots_campeche, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_04_campeche,
+                                 locality = "San Francisco de Campeche",
+                                 cve_ent = "04",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**Ciudad del Carmen**]{style="color:#990000"}
+
+```{r vector_hotspots_cd_carmen, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_04_campeche,
+                                 locality = "Ciudad del Carmen",
+                                 cve_ent = "04",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### [**Escarcega**]{style="color:#990000"}
+
+```{r vector_hotspots_escarcega, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_04_campeche,
+                                 locality = "Escarcega",
+                                 cve_ent = "04",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+# **Mapas de Riesgo de Transmisión**
+
+## Column {.tabset}
+
+### [**Pánuco**]{style="color:#7d9029"}
+
+```{r, risk_map_campeche, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_04_campeche,
+                          hotspots = cases_hotspots_agebs19,
+                          locality = "San Franciscod e Campeche",
+                          cve_ent = "04",
+                          intensity_perc = 25)
+risk_map(risk = risk, staticmap = FALSE)
+```
 
 
