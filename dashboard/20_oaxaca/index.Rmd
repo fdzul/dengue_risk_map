@@ -4,8 +4,7 @@ output:
   flexdashboard::flex_dashboard:
       theme: united
       social: ["twitter", "facebook", "menu", "github"]
-output_dir: docs
-cover-image: images/cover.jpg
+output_dir: libs      
 ---
 
 ```{r setup}
