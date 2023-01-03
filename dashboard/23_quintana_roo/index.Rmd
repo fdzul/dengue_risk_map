@@ -131,3 +131,34 @@ hotspots_map(cve_ent = "23",
 
 ```
 
+
+### [**Cozumel**]{style="color:#990000"}
+
+```{r, hotspots_dengue_cozumel, echo=FALSE}
+hotspots_map(cve_ent = "23",
+             locality = "Cozumel",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Felipe Carrillo Puerto**]{style="color:#990000"}
+
+```{r, hotspots_dengue_carrillo_puerto, echo=FALSE}
+hotspots_map(cve_ent = "23",
+             locality = "Felipe Carrillo Puerto",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Playa del Carmen**]{style="color:#990000"}
+
+```{r, hotspots_dengue_playa_carmen, echo=FALSE}
+hotspots_map(cve_ent = "23",
+             locality = "Playa del Carmen",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
