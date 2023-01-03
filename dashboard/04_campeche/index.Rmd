@@ -108,4 +108,36 @@ if(as.vector(Sys.info()["sysname"]) == "Darwin"){
 
 ## Column {.tabset}
 
+### [**Campeche**]{style="color:#990000"}
+
+```{r hotspots_dengue_campeche}
+hotspots_map(cve_ent = "04",
+             locality = "San Francisco de Campeche",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+
+### [**Ciudad del Carmen**]{style="color:#990000"}
+
+```{r hotspots_dengue_cd_carmen}
+hotspots_map(cve_ent = "04",
+             locality = "Ciudad del Carmen",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Escárcega**]{style="color:#990000"}
+
+```{r hotspots_dengue_escarcega}
+hotspots_map(cve_ent = "04",
+             locality = "Escárcega",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+
 
