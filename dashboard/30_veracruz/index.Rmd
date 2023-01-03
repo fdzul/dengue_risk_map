@@ -249,7 +249,7 @@ hotspots_map(cve_ent = "30",
 
 ### [**Pánuco**]{style="color:#990000"}
 
-```{r vector_hotspots_merida, dpi = 300, warning=FALSE, message=FALSE}
+```{r vector_hotspots_panuco, dpi = 300, warning=FALSE, message=FALSE}
 eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
                                  locality = "Panuco",
                                  cve_ent = "30",
@@ -258,5 +258,102 @@ eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
 ```
 
 
+### [**Tuxpan**]{style="color:#990000"}
+
+```{r vector_hotspots_tuxpan, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
+                                 locality = "Tuxpan de Rodriguez Cano",
+                                 cve_ent = "30",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**Poza Rica**]{style="color:#990000"}
+
+```{r vector_hotspots_poza_rica, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
+                                 locality = "Poza Rica de Hidalgo",
+                                 cve_ent = "30",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**Martínez de la Torre**]{style="color:#990000"}
+
+```{r vector_hotspots_martinez, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
+                                 locality = "Martinez de la Torre",
+                                 cve_ent = "30",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### [**Córdoba**]{style="color:#990000"}
+
+```{r vector_hotspots_cordoba, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
+                                 locality = "Cordoba",
+                                 cve_ent = "30",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+
+### [**Orizaba**]{style="color:#990000"}
+
+```{r vector_hotspots_orizaba, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
+                                 locality = "Orizaba",
+                                 cve_ent = "30",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**Veracruz**]{style="color:#990000"}
+
+```{r vector_hotspots_ver, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
+                                 locality = "Veracruz",
+                                 cve_ent = "30",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**Cosamaloapan**]{style="color:#990000"}
+
+```{r vector_hotspots_cosamaloapan, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
+                                 locality = "Cosoamaloapan",
+                                 cve_ent = "30",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**San Andres Tuxtla**]{style="color:#990000"}
+
+```{r vector_hotspots_san_andres, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
+                                 locality = "San Andres Tuxtla",
+                                 cve_ent = "30",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**Minatitlan**]{style="color:#990000"}
+
+```{r vector_hotspots_minatitlan, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
+                                 locality = "Minatitlán",
+                                 cve_ent = "30",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
 
 
