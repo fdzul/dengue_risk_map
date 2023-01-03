@@ -356,4 +356,18 @@ eggs_hotspots_intensity_map_year(betas = betas_veracruz_zinb1,
                                  name = "SunsetDark")
 ```
 
+# **Mapas de Riesgo de Transmisión**
+
+## Column {.tabset}
+
+### [**Pánuco**]{style="color:#7d9029"}
+
+```{r, risk_map_merida, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_veracruz_zinb1,
+                          hotspots = cases_hotspots_agebs19,
+                          locality = "veracruz",
+                          cve_ent = "30",
+                          intensity_perc = 25)
+risk_map(risk = risk, staticmap = FALSE)
+```
 
