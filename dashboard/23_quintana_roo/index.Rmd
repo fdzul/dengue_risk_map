@@ -110,12 +110,24 @@ if(as.vector(Sys.info()["sysname"]) == "Darwin"){
 
 ## Column {.tabset}
 
-### [**Chetumal**]{style="color:#990000"}
+### [**Cancun**]{style="color:#990000"}
 
-```{r, hotspots_dengue_panuco, echo=FALSE}
-hotspots_map(cve_ent = "30",
-             locality = "Panuco",
+```{r, hotspots_dengue_cancun, echo=FALSE}
+hotspots_map(cve_ent = "23",
+             locality = "Cancun",
              hotspots = cases_hotspots_agebs19,
              static_map = FALSE)
 
 ```
+
+
+### [**Chetumal**]{style="color:#990000"}
+
+```{r, hotspots_dengue_chetumal, echo=FALSE}
+hotspots_map(cve_ent = "23",
+             locality = "Chetumal",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
