@@ -235,3 +235,24 @@ risk <- risk_agebs(spde_model = betas_23_quintana_roo,
 risk_map(risk = risk, staticmap = FALSE)
 ```
 
+### [**Cozumel**]{style="color:#7d9029"}
+
+```{r, risk_map_cozumel, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_23_quintana_roo,
+                          hotspots = cases_hotspots_agebs19,
+                          locality = "Cozumel",
+                          cve_ent = "23",
+                          intensity_perc = 25)
+risk_map(risk = risk, staticmap = FALSE)
+```
+
+### [**Playa del Carmen**]{style="color:#7d9029"}
+
+```{r, risk_map_del_carmen, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_23_quintana_roo,
+                          hotspots = cases_hotspots_agebs19,
+                          locality = "Playa del Carmen",
+                          cve_ent = "23",
+                          intensity_perc = 25)
+risk_map(risk = risk, staticmap = FALSE)
+```
