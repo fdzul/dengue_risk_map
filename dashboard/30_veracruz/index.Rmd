@@ -97,11 +97,148 @@ if(as.vector(Sys.info()["sysname"]) == "Darwin"){
     
     
     # load the vector hotspots
-    load("D:/OneDrive/proyects/hotspots_eggs/8.RData/31_yucatan/betas/31_yucatan_zinb1_betas.RData")
+    load("D:/OneDrive/proyects/hotspots/8.RData/eggs_hotspots_historic/30_veracruz/result_veracruz_zinb1.RData")
+    
+    
     
 } else if(as.vector(Sys.info()["sysname"]) == "Linux"){
     
 }
 
+
+```
+
+# **Hotspots de la Transmisión de Dengue**
+
+## Column {.tabset}
+
+### [**Pánuco**]{style="color:#990000"}
+
+```{r, hotspots_dengue_panuco, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Panuco",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Tuxpan**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_tuxpan, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Tuxpan de Rodríguez Cano",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+
+```
+
+### [**Poza Rica**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_poza_rica, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Poza Rica de Hidalgo",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Papantla**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_papantla, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Papantla de Olearte",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Martínez de la Torre**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_martinez, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Martínez de la Torre",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Xalapa**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_xalapa, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Xalapa-Enríquez",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Córdoba**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_cordoba, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Córdoba",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Orizaba**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_orizaba, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Orizaba",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Veracruz**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_veracruz, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Veracruz",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Cosomaloapan**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_cosamaloapan, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Cosamaloapan",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**San Andres Tuxtla**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_san_andres, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "San Andres Tuxtla",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Coatzacoalcos**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_coatzacoalcos, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Coatzacoalcos",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Minatitlán**]{style="color:#7d9029"}
+
+```{r, hotspots_dengue_minatitlan, echo=FALSE}
+hotspots_map(cve_ent = "30",
+             locality = "Minatitán",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
 
 ```
