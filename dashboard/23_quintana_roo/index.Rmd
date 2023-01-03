@@ -208,3 +208,30 @@ eggs_hotspots_intensity_map_year(betas = betas_23_quintana_roo,
                                  name = "SunsetDark")
 ```
 
+# **Dengue Risk Maps**
+
+## Column {.tabset}
+
+### [**Cancun**]{style="color:#7d9029"}
+
+```{r, risk_map_cancun, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_23_quintana_roo,
+                          hotspots = cases_hotspots_agebs19,
+                          locality = "Cancun",
+                          cve_ent = "23",
+                          intensity_perc = 25)
+risk_map(risk = risk, staticmap = FALSE)
+```
+
+
+### [**Chetumal**]{style="color:#7d9029"}
+
+```{r, risk_map_chetumal, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_23_quintana_roo,
+                          hotspots = cases_hotspots_agebs19,
+                          locality = "Chetumal",
+                          cve_ent = "23",
+                          intensity_perc = 25)
+risk_map(risk = risk, staticmap = FALSE)
+```
+
