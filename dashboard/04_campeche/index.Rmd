@@ -178,15 +178,35 @@ eggs_hotspots_intensity_map_year(betas = betas_04_campeche,
 
 ## Column {.tabset}
 
-### [**Pánuco**]{style="color:#7d9029"}
+### [**Campeche**]{style="color:#7d9029"}
 
 ```{r, risk_map_campeche, echo=FALSE}
 risk <- risk_agebs(spde_model = betas_04_campeche,
                           hotspots = cases_hotspots_agebs19,
-                          locality = "San Franciscod e Campeche",
+                          locality = "San Franciscod de Campeche",
                           cve_ent = "04",
                           intensity_perc = 25)
 risk_map(risk = risk, staticmap = FALSE)
 ```
 
+### [**Ciudad del Carmen**]{style="color:#7d9029"}
 
+```{r, risk_map_cd_carmen, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_04_campeche,
+                          hotspots = cases_hotspots_agebs19,
+                          locality = "Ciudad del Carmen",
+                          cve_ent = "04",
+                          intensity_perc = 25)
+risk_map(risk = risk, staticmap = FALSE)
+```
+
+### [**Escarcega**]{style="color:#7d9029"}
+
+```{r, risk_map_escarcega, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_04_campeche,
+                          hotspots = cases_hotspots_agebs19,
+                          locality = "Escarcega",
+                          cve_ent = "04",
+                          intensity_perc = 25)
+risk_map(risk = risk, staticmap = FALSE)
+```
